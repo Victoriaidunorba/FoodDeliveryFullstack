@@ -1,0 +1,205 @@
+/* Slideshow */
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Noto+Sans+Mono:wght@100;200;300;400;500&family=Quicksand:wght@300;400&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 500px;
+  }
+  
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+    background: transparent;
+  }
+  
+  .slide {
+    display: inline-block;
+  
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    margin: 15px 7px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #6a0dad;
+  }
+  
+ 
+  .button {
+    padding: 0 1.4em;
+    border-radius: 1em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    border: 0.02em solid #B3B3BC;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0.1s, box-shadow 0.2s ease-out, transform 0.2s ease-out;
+    position: relative;
+    box-shadow: 0px 8px 4px #A3A3AC;
+    overflow: hidden;
+  }
+  
+  .button:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .button:hover {
+    background-color: #3D84D4;
+    border-color: #3D84D4;
+    box-shadow: 0px 2px 3px #A3A3AC;
+    transform: translateY(4px);
+  }
+  
+  .button.green:hover {
+    background-color: #58D647;
+    border-color: #58D647;
+  }
+  .button.purplish:hover {
+    background-color: #A3A3AC;
+    border-color: #A3A3AC;
+  }
+  
+  .button.red:hover {
+    background-color: palevioletred;
+    border-color: palevioletred;
+  }
+  .button.greens:hover {
+    background-color: #411b57;
+    border-color: #411b57;
+  }
+  .textContainer {
+    perspective: 700px;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .sampleText {
+    opacity: 0;
+    white-space: nowrap;
+    font-family: 'Gloria Hallelujah', sans-serif;
+  }
+  
+  .cube {
+    transform-style: preserve-3d;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.4s ease-out;
+    transform-origin: 50% 50% -0.5em;
+  }
+  
+  .cube span {
+    position: relative;
+    white-space: nowrap;
+    font-size: 15px;
+    font-family: 'Gloria Hallelujah', sans-serif;
+  }
+  
+  .button:hover .cube-1 {
+    transform: rotateX(-179.999deg);
+  }
+  
+  .cube-2 {
+    transform: translateX(100%);
+    transition-delay: 0.07s;
+  }
+  
+  .button:hover .cube-2 {
+    transform: translateX(100%) rotateX(-179.999deg);
+  }
+  
+  .cube-2 span {
+    left: -100%;
+  }
+  
+  .cube-3 {
+    transform: translateX(200%);
+    transition-delay: 0.14s;
+  }
+  
+  .button:hover .cube-3 {
+    transform: translateX(200%) rotateX(-179.999deg);
+  }
+  
+  .cube-3 span {
+    left: -200%;
+  }
+  
+  .cube-4 {
+    transform: translateX(300%);
+    transition-delay: 0.21s;
+  }
+  
+  .button:hover .cube-4 {
+    transform: translateX(300%) rotateX(-179.999deg);
+  }
+  
+  .cube-4 span {
+    left: -300%;
+  }
+  
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .front {
+    transform: translateZ(0.0001em);
+    color: #767690;
+  }
+  
+  .back {
+    transform: rotateX(-180deg) translateZ(1em);
+    color: white;
+  }
+  
+  .button:after {
+    position: absolute;
+    content: '';
+    left: -10%;
+    right: -10%;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transform: skewX(-30deg) translateX(-110%);
+    background: linear-gradient(to right, transparent, white 95%);
+    transition: all 0s ease-in-out;
+    transition-property: opacity, transform;
+    opacity: 0.8;
+  }
+  
+  .button:hover:after {
+    transition-duration: 0.8s;
+    transform: skewX(-30deg) translateX(50%);
+    opacity: 0;
+  }
+  
+  
+

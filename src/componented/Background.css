@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Noto+Sans+Mono:wght@100;200;300;400;500&family=Quicksand:wght@300;400&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.mine{
+    margin-left: 40%;
+}.blk{
+    width: 55rem;
+}.blk2{width: 60rem;}
+.been{
+    margin-left: 0.2rem;
+}
+
+.be{
+    margin-left: -44rem;
+    margin-top: -8rem;
+}
+.be1{
+    margin-left: -70rem;
+    margin-top: -8rem;
+}
+.be2{
+    margin-left: -44rem;
+    margin-top: 27rem;
+}
+.be3{
+    margin-left: -70rem;
+    margin-top: 29rem;
+}
+.be4{
+    margin-left: -44rem;
+    margin-top: 29rem;
+}
+.bestseller{
+    width: 20%;
+    height: 20%;
+}
+/* .bag{
+    background-image: url('../img/background2.jpeg');
+} */
+.news{
+    color: green;
+    font-family: 'Gloria Hallelujah', serif;
+}
+.taviraj{
+    font-family: 'Quicksand', sans-serif;
+}.glo{
+    font-family: 'Noto sans Mono', serif;
+}
+.shear{
+    justify-content: center;
+    align-items: center;
+}.bestt{
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    margin-top: 20%;
+    color: green;
+}
+.another{
+    margin-left: -260%;
+}.balm{
+    width: 72rem;
+}

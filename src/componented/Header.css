@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Noto+Sans+Mono:wght@100;200;300;400;500&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+
+* {
+    box-sizing: border-box;
+    backface-visibility: hidden;
+  }
+  .searchcontainer{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 60px;
+    background: #4c7046; 
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    border-radius: 15px;
+    color: green;
+  
+  }
+  .searchcontainer button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: transparent;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #0f330f; 
+  }
+  
+  .searchcontainer input[type=text]{
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: green;
+  
+  }
+.unique{
+  width: 100%;
+  margin-left: -3%;
+}
+.une{
+  /* background-color: #4a6c43; */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT182pkTENPkyVJXEOd2FiIxAzXCND0kFKnVAMpBWl_&s');
+}
+.trois{
+  /* background-color: #e8c3d1; */
+  background-image: url('https://img.freepik.com/free-photo/dark-green-texture_1205-338.jpg?1?w=360');}
+
+.deux{
+  /* background-color: #411b57; */
+  background-image: url('https://i.pinimg.com/originals/9a/22/a4/9a22a470e131f1711dc1abf10ce90722.jpg');
+}
+.quarte{
+  /* background-color: #411b57; */
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/214/428/small/dark-green-blurred-colorful-background-vector.jpg');
+}
+.cinq{
+  background-image: url('https://wallpaperaccess.com/full/1288356.jpg');
+}
+
+.un{
+  width: 20%;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 30px;
+    font-family: 'Dosis', sans-serif;
+    background: radial-gradient(circle, #E1E3E6, #B6C3C7);
+    flex-direction: column;
+  }
+  .cool{
+    font-family: 'Noto Sans Mono', monospace;
+  }
+  
+  .button {
+    padding: 0 1.4em;
+    border-radius: 1em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    border: 0.02em solid #B3B3BC;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0.1s, box-shadow 0.2s ease-out, transform 0.2s ease-out;
+    position: relative;
+    box-shadow: 0px 8px 4px #A3A3AC;
+    overflow: hidden;
+  }
+  
+  .button:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .button:hover {
+    background-color: #3D84D4;
+    border-color: #3D84D4;
+    box-shadow: 0px 2px 3px #A3A3AC;
+    transform: translateY(4px);
+  }
+  
+  .button.green:hover {
+    background-color: #58D647;
+    border-color: #58D647;
+  }
+  
+  .button.red:hover {
+    background-color: #CB1500;
+    border-color: #CB1500;
+  }
+  
+  .textContainer {
+    perspective: 700px;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .sampleText {
+    opacity: 0;
+    white-space: nowrap;
+  }
+  
+  .cube {
+    transform-style: preserve-3d;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.4s ease-out;
+    transform-origin: 50% 50% -0.5em;
+  }
+  
+  .cube span {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .button:hover .cube-1 {
+    transform: rotateX(-179.999deg);
+  }
+  
+  .cube-2 {
+    transform: translateX(100%);
+    transition-delay: 0.07s;
+  }
+  
+  .button:hover .cube-2 {
+    transform: translateX(100%) rotateX(-179.999deg);
+  }
+  
+  .cube-2 span {
+    left: -100%;
+  }
+  
+  .cube-3 {
+    transform: translateX(200%);
+    transition-delay: 0.14s;
+  }
+  
+  .button:hover .cube-3 {
+    transform: translateX(200%) rotateX(-179.999deg);
+  }
+  
+  .cube-3 span {
+    left: -200%;
+  }
+  
+  .cube-4 {
+    transform: translateX(300%);
+    transition-delay: 0.21s;
+  }
+  
+  .button:hover .cube-4 {
+    transform: translateX(300%) rotateX(-179.999deg);
+  }
+  
+  .cube-4 span {
+    left: -300%;
+  }
+  
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .front {
+    transform: translateZ(0.0001em);
+    color: #767690;
+  }
+  
+  .back {
+    transform: rotateX(-180deg) translateZ(1em);
+    color: white;
+  }
+  
+  .button:after {
+    position: absolute;
+    content: '';
+    left: -10%;
+    right: -10%;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transform: skewX(-30deg) translateX(-110%);
+    background: linear-gradient(to right, transparent, white 95%);
+    transition: all 0s ease-in-out;
+    transition-property: opacity, transform;
+    opacity: 0.8;
+  }
+  
+  .button:hover:after {
+    transition-duration: 0.8s;
+    transform: skewX(-30deg) translateX(50%);
+    opacity: 0;
+  }
+  
+  h1 {
+    margin-top: 200px;
+    text-align: center;
+  }
+  .buttons-container {
+    text-align: center;
+  }
+  
+  .buttonr {
+    margin: 0 10px;
+    border: none;
+    color: #a91d57;
+    font-weight: bold;
+    background-color: #FEE140;
+    background: linear-gradient(90deg, #a78571 0%, green 100%);
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+  
+  .yes {
+    animation: yes 1s ease-in-out infinite;
+  }
+  
+  .yes:hover {
+    cursor: pointer;
+  }
+  
+  .no {
+    animation: no 1s ease-in-out infinite;
+  }
+  
+  .no:hover {
+    cursor: not-allowed;
+  }
+  
+  @keyframes no {
+    50% {
+      transform: matrix3d(1, 0, 0, 0.005, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    75% {
+      transform: matrix3d(1, 0, 0, -0.005, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+  }
+  
+  @keyframes yes {
+    50% {
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0.005, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+    75% {
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0.005, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+  }
+  

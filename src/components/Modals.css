@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Noto+Sans+Mono:wght@100;200;300;400;500&family=Quicksand:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.modalBtn {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    padding: 12px 24px;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.modalContainer{
+    max-width: 800px;
+    width: 100%;
+    position: fixed;
+    top: 60%;
+    zoom: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    /* background-image: url('https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FS304706_Watch_Ya_Tone_110122_LAUNCH_HP_BANNER_DESKTOP_BULK_01b4bbbc-d5ee-45fd-a40f-a93a310cd588_1200x.jpg?v=1667231732'); */
+    background-image: url('https://cdn.shopify.com/s/files/1/0341/3458/9485/files/FB327004-FB_FS-Holiday-Shopping-Prep-_-Gift-Guide-Launch-110822_HP-BANNER_UNDER-50_FSDESKTOP-SLIDER-COPY-BACKGROUND_2_1200x.jpg?v=1667597469');
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.75);
+}
+.image{
+    width: 250px;
+    object-fit: cover;
+}
+.modalRight{
+    width: 100%;
+}
+.closeBtn{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+}
+.content .firstp{
+   justify-content: center;
+   align-items: center;
+   font-family: 'Quicksand', sans-serif;
+   font-size: large;
+}
+.secondp{
+    font-family: 'Gloria Hallelujah', sans-serif;
+    font-size: larger;
+}
+.btnContainer {
+    display: flex;
+    padding: 1rem 1rem;
+}
+.btnContainer button{
+    width: 100%;
+    margin: 0.5rem;
+    padding: 16px 0;
+    border: none;
+    color: #ffffff
+}
+.btnPrimary{
+    /* background-color: #571b1b; */
+    background-color: #69193d;
+}
+.btnOutline{
+    background-color: #654754;
+}
+.bold{
+    font-weight: 600;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.class{
+    font-weight: bolder;
+    color: rgb(189, 14, 14);
+}
+
+@media screen and (max-width: 500px) {
+    .modalContainer{
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    img{
+        width: 100%;
+    }
+    .closeBtn{
+        color: white;
+    }
+}
+@media screen and (max-width: 768px) {
+   
+  }
+  
+  @media screen and (max-width: 480px) {
+   .wide{
+    height: 60%;
+   }
+.modalContainer{
+    margin-top: 60%;
+    margin-left: 2.5%;
+    height: 45vh;
+    scale: 50%;
+    width: 190%;
+    zoom: 150%
+   
+}
+img{
+    width: 100%;
+}
+.closeBtn{
+    color: black;
+    font-weight: bolder;
+    
+}
+.content{
+    margin-top: -60%;
+    margin-left: 50%;
+    zoom: 130%;
+}
+.btnContainer{
+    margin-top: -4%;
+}
+   
+  }
+  
+  @media screen and (max-width: 420px) {
+   
+  }

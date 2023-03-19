@@ -1,0 +1,3 @@
+<Popup trigger={<button> Trigger</button>} position="center"
+    >
+</popup>

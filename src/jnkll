@@ -1,0 +1,27 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom';
+
+import { CreateContainer, Discover, MainContainer } from './components';
+
+const Routing = () => {
+  return (
+    <Routes>
+   
+    <Route
+        path='/discover'
+        component={Discover}
+    />
+    <Route
+        path='/createItem'
+        component={CreateContainer}
+    />
+    <Route
+        path='/'
+        exact
+        component={MainContainer}
+    />
+</Routes>
+  )
+}
+
+export default Routing

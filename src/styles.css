@@ -1,0 +1,10 @@
+
+.apps{
+    /* background: url('../src/img/whiteback.jpg');    */
+    
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4mTkVcknUNCExpDwMQat5qwwfyfSgGmvSGqdErMZ5&s');
+    animation: heros 40s infinite;    
+}
+.discovery{
+    margin-top: 50%;
+}
