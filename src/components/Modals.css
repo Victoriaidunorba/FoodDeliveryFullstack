@@ -91,55 +91,35 @@
 
 @media screen and (max-width: 500px) {
     .modalContainer{
-        flex-direction: column;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
+       visibility:hidden;
     }
-    img{
-        width: 100%;
+    .overlay{
+        visibility:hidden;
     }
-    .closeBtn{
-        color: white;
-    }
+    
 }
 @media screen and (max-width: 768px) {
-   
+   .modalContainer{
+    visibility:hidden;
+   }
+   .overlay{
+    visibility:hidden;
+   }
   }
   
   @media screen and (max-width: 480px) {
-   .wide{
-    height: 60%;
+   .overlay{
+    visibility: hidden;
    }
 .modalContainer{
-    margin-top: 60%;
-    margin-left: 2.5%;
-    height: 45vh;
-    scale: 50%;
-    width: 190%;
-    zoom: 150%
+    
+    visibility: hidden;
    
 }
-img{
-    width: 100%;
-}
-.closeBtn{
-    color: black;
-    font-weight: bolder;
-    
-}
-.content{
-    margin-top: -60%;
-    margin-left: 50%;
-    zoom: 130%;
-}
-.btnContainer{
-    margin-top: -4%;
+.overlay{
+    visibility: hidden;
 }
    
   }
   
-  @media screen and (max-width: 420px) {
-   
-  }
+  

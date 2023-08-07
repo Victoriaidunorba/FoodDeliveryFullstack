@@ -5,7 +5,7 @@ import './Modals.css'
 const Modals = ({open, onClose}) => {
     if(!open) return null
   return (
-    <div onClick={onClose} className='overlay wide'>
+    <div onClick={onClose} className='overlay hidden lg:flex md:hidden wide'>
         <div onClick={(e) => {
             e.stopPropagation()
         }} className="modalContainer">
